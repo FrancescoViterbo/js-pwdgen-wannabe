@@ -14,6 +14,7 @@ const surnameAlert = document.getElementById("surname-alert");
 
 button.addEventListener("click", popup);
 
+/* Processo i dati per verificare la presenza di errori e creo la password */
 function popup(event){
     /* Prevengo il ricaricamento automatico della pagina */
     event.preventDefault();
@@ -25,13 +26,23 @@ function popup(event){
     if (nomeval.length < 2 || nomeval.length > 24 || cognomeval.length < 2 || cognomeval.length > 24){
         if(nomeval === ""){
             nameAlert.innerHTML = "Devi inserire un nome nel campo soprastante.";
+            nameAlert.style.padding = "0.3rem 0.4rem";
+            nome.style.margin = "2rem auto 1rem auto";
         } else if(nomeval.length < 2 || nomeval.length > 24){
             nameAlert.innerHTML = "Il nome inserito deve essere composto da un numero di caratteri compreso tra 2 e 24";
+            nameAlert.style.padding = "0.3rem 0.4rem";
+            nome.style.margin = "2rem auto 1rem auto";
         }
         if (cognomeval === ""){
             surnameAlert.innerHTML = "Devi inserire un nome nel campo soprastante.";
+            surnameAlert.style.padding = "0.3rem 0.4rem";
+            cognome.style.margin = "2rem auto 1rem auto";
+            colore.style.margin = "2rem auto 0 auto";
         } else if(cognomeval.length < 2 || cognomeval.length > 24){
             surnameAlert.innerHTML = "Il cognome inserito deve essere composto da un numero di caratteri compreso tra 2 e 24";
+            surnameAlert.style.padding = "0.3rem 0.4rem";
+            cognome.style.margin = "2rem auto 1rem auto";
+            colore.style.margin = "2rem auto 0 auto";
         }
     } else {
         /* Se i campi sono compilati ed i dati contengono il giusto numero di caratteri genero la password */
