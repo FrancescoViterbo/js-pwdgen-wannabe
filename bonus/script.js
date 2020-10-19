@@ -69,6 +69,12 @@ function popup(event){
         /* Svuoto i campi contenenti eventuali messaggi di errore */
         nameAlert.innerHTML = "";
         surnameAlert.innerHTML = "";
+        /* Aggiusto margin e padding */
+        nameAlert.style.padding = "0";
+        nome.style.margin = "1rem auto 0 auto";
+        surnameAlert.style.padding = "0";
+        cognome.style.margin = "1rem auto 0 auto";
+        colore.style.margin = "1rem auto 0 auto";
     }
 }
 
