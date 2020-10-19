@@ -12,7 +12,7 @@ const surnameAlert = document.getElementById("surname-alert");
 
 /* Event listener */
 
-button.addEventListener("click", popup)
+button.addEventListener("click", popup);
 
 function popup(event){
     /* Prevengo il ricaricamento automatico della pagina */
@@ -55,6 +55,9 @@ function popup(event){
         nome.value = "";
         cognome.value = "";
         colore.value = "";
+        /* Svuoto i campi contenenti eventuali messaggi di errore */
+        nameAlert.innerHTML = "";
+        surnameAlert.innerHTML = "";
     }
 }
 
