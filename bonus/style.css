@@ -43,7 +43,7 @@ form input {
     width: 200px;
 }
 
-form input:focus, {
+form input:focus {
     outline: none;
     box-shadow: inset -2px -2px 5px black, 0 0 10px yellow;
 }
