@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crea un Account</h1>
+    <form action="index.html" method="POST">
+        <h2>
+            Fornisci il tuo nome, cognome e colore preferito nei campi sottostanti.
+            Minimo 2 caratteri, massimo 24. Al completamento del form ti verrà fornita
+            una password generata automaticamente.
+        </h2>
+        <input id="name" type="text" maxlength="24" minlength="2" placeholder="Nome" required>
+        <p><span id="name-alert"></span></p>
+        <input id="surname" type="text" maxlength="24" minlength="2" placeholder="Cognome" required>
+        <p><span id="surname-alert"></span></p>
+        <input id="color" type="text" maxlength="24" minlength="2" placeholder="Colore preferito">
+        <button id="btn" type="submit" name="submit">Invia</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
